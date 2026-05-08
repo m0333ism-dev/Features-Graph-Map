@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Style Scalpel Feature Graph Map</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 24px;
+      line-height: 1.6;
+      background: #f7f7f7;
+      color: #222;
+    }
+    .card {
+      background: white;
+      padding: 24px;
+      margin: 20px 0;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+    a {
+      color: #0645ad;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .note {
+      color: #555;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Style Scalpel Feature Graph Map</h1>
+
+  <p>
+    Interactive normalized line graphs for the 132-feature stylometric profile used in the Style Scalpel analysis.
+  </p>
+
+  <div class="card">
+    <h2>AI Feature Map</h2>
+    <p>Interactive normalized line graph for AI-generated samples.</p>
+    <p><a href="ai_features_lines.html">Open AI feature graph</a></p>
+  </div>
+
+  <div class="card">
+    <h2>Human Feature Map</h2>
+    <p>Interactive normalized line graph for human-written samples.</p>
+    <p><a href="human_features_lines.html">Open Human feature graph</a></p>
+  </div>
+
+  <p class="note">
+    The graphs visualize 132 numeric stylometric features. Each feature is min-max normalized to [0, 1] across all samples.
+  </p>
+
+</body>
+</html>
