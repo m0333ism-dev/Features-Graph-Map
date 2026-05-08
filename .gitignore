@@ -1,0 +1,24 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+
+# Logs/temp
+*.log
+*.tmp
+
+# Do not accidentally upload datasets or models
+*.csv
+*.xlsx
+*.joblib
+*.pkl
+*.onnx
+*.exe
+*.zip
+
+# Python cache
+__pycache__/
+*.pyc
