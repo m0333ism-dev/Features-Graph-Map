@@ -52,3 +52,13 @@ It is not a standalone detector and should not be used by itself to judge whethe
 ## Note
 
 These graphs are exploratory visual materials connected to the Style Scalpel project. They are intended to support interpretation, comparison, and research presentation.
+
+## License
+
+The visual graph materials in this repository are licensed under the **Creative Commons Attribution 4.0 International License (CC BY 4.0)**.
+
+You may share and adapt the graphs, provided appropriate credit is given to the Style Scalpel project.
+
+Suggested attribution:
+
+> Muhammad Ismail. *Style Scalpel Feature Graph Map*. GitHub, 2026. Licensed under CC BY 4.0.
