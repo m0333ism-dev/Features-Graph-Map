@@ -1,4 +1,3 @@
-@'
 Creative Commons Attribution 4.0 International Public License
 
 This repository's visual graph materials, documentation, and research visualization files are licensed under the Creative Commons Attribution 4.0 International License.
@@ -7,4 +6,3 @@ You are free to share and adapt these materials, provided appropriate credit is 
 
 License text:
 https://creativecommons.org/licenses/by/4.0/legalcode
-'@ | Set-Content -Encoding UTF8 LICENSE
