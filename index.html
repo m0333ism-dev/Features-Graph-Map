@@ -1,62 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Style Scalpel Feature Graph Map</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 900px;
-      margin: 60px auto;
-      padding: 0 24px;
-      line-height: 1.6;
-      background: #f7f7f7;
-      color: #222;
-    }
-    .card {
-      background: white;
-      padding: 24px;
-      margin: 20px 0;
-      border-radius: 12px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-    }
-    a {
-      color: #0645ad;
-      font-weight: bold;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .note {
-      color: #555;
-      font-size: 0.95rem;
-    }
-  </style>
-</head>
-<body>
-
-  <h1>Style Scalpel Feature Graph Map</h1>
-
-  <p>
-    Interactive normalized line graphs for the 132-feature stylometric profile used in the Style Scalpel analysis.
-  </p>
-
-  <div class="card">
-    <h2>AI Feature Map</h2>
-    <p>Interactive normalized line graph for AI-generated samples.</p>
-    <p><a href="ai_features_lines.html">Open AI feature graph</a></p>
-  </div>
-
-  <div class="card">
-    <h2>Human Feature Map</h2>
-    <p>Interactive normalized line graph for human-written samples.</p>
-    <p><a href="human_features_lines.html">Open Human feature graph</a></p>
-  </div>
-
-  <p class="note">
-    The graphs visualize 132 numeric stylometric features. Each feature is min-max normalized to [0, 1] across all samples.
-  </p>
-
-</body>
-</html>
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="graphs.css?v=20261114"><link rel="icon" href="https://stylescalpel.com/static/favicon.svg" type="image/svg+xml"><title>Human and AI feature graphs | Muhammad Ismail</title><meta name="description" content="Explore 132 stylometric features in Human and AI writing, with genre controls, individual profiles and links to the rebuilt relational graph study."></head><body><header><nav aria-label="Primary"><a href="index.html">Overview</a><a href="ai_features_lines.html">AI graphs</a><a href="human_features_lines.html">Human graphs</a><a href="https://m0333ism-dev.github.io/relational-graph-stylometry/">Interaction explorer ↗</a><a href="https://stylescalpel.com/about/">Muhammad Ismail ↗</a></nav><p class="eyebrow">Linguistic evidence · Research visualisations</p><h1>Human and AI writing, feature by feature.</h1><p>Updated interactive views from the fixed original research corpus, connected to the rebuilt feature-interaction explorer developed alongside the AIJ manuscript.</p></header><main>
+<section class="intro"><h2>A clearer way to compare the original profiles</h2><p>The earlier AI and Human line graphs now have genre controls, feature selections, shared-scale summaries and optional individual-document profiles. Both groups use the same data and normalization reference.</p><p><strong>5,046 documents · 132 features · Six genres · 2,523 documents per class</strong></p></section>
+<div class="cards"><article class="card"><p class="eyebrow">AI-generated writing</p><h2>AI feature profiles</h2><p>Inspect the median and spread of each feature, then switch to the individual documents or compare with Human writing on the same axes.</p><a class="button" href="ai_features_lines.html">Explore AI graphs ↗</a></article><article class="card"><p class="eyebrow">Human-written text</p><h2>Human feature profiles</h2><p>Explore the same 132 measurements by genre. Check the group spread and individual profiles rather than relying on one pooled line.</p><a class="button" href="human_features_lines.html">Explore Human graphs ↗</a></article></div>
+<section class="card"><p class="eyebrow">Rebuilt research explorer</p><h2>Go beyond individual feature profiles</h2><p>The newer relational-graph portal contains paired Human/AI joint plots, 3D document tuples, cross-genre configurations, saved reconstructions, and a separate RAID study. It documents recurring relationships alongside exceptions and incomplete reconstructions.</p><p class="links"><a href="https://m0333ism-dev.github.io/relational-graph-stylometry/">Original-corpus interaction explorer ↗</a><a href="https://m0333ism-dev.github.io/relational-graph-stylometry/#capture-study">Observed vs reconstructed graphs ↗</a><a href="https://m0333ism-dev.github.io/relational-graph-stylometry/raid/">RAID explorer and frozen results ↗</a></p></section>
+<aside class="research-note"><h2>What these graphs can tell you</h2><p>These are descriptive views of the original 5,046-document corpus. Normalization uses the same full-corpus minimum and maximum for each feature in both classes, even after a genre filter. It was not fitted on a held-out training split and is not a deployable scoring transform.</p><p>Median lines and middle-50% bands summarize each feature separately. They do not preserve joint feature interactions. Use the <a href="https://m0333ism-dev.github.io/relational-graph-stylometry/">rebuilt interaction explorer</a> for document tuples, 3D views, configurations, reconstructions and genre exceptions.</p><p>The <a href="https://m0333ism-dev.github.io/relational-graph-stylometry/raid/">RAID explorer</a> is a separate study with its own discovery, development and frozen evaluation. Its results should not be attributed to these original-corpus line plots.</p></aside><details><summary>Earlier versions and provenance</summary><p>The previous full line graphs remain available unchanged: <a href="legacy/ai_features_lines.html">original AI graph</a> and <a href="legacy/human_features_lines.html">original Human graph</a>. The new viewer pins the public original-corpus payload to the research repository commit recorded below and checks its SHA-256 before rendering. Filters do not refit normalization, formulas or models.</p></details></main><footer><p>Muhammad Ismail · Exploratory research visualisations · <a href="https://github.com/m0333ism-dev/Features-Graph-Map">Repository</a> · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></p><p class="source-id">Pinned public data source: <a href="https://github.com/m0333ism-dev/relational-graph-stylometry/tree/9c0f9368368bcce058d9c4baf80a614d3709cdbb">9c0f9368368bcce058d9c4baf80a614d3709cdbb</a><br>Source CSV SHA-256: 5068c83649471c0ac2daff34841c5ab6622eb13c49547875b750a95c745a2ff4</p></footer></body></html>
